@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="369.0" style="-fx-background-color: LIGHTBLUE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <TextField fx:id="lblmouse" disable="true" layoutX="14.0" layoutY="32.0" style="-fx-background-color: #F08080;" />
+      <TextField fx:id="lblusb" disable="true" layoutX="15.0" layoutY="76.0" style="-fx-background-color: #F08080;" />
+      <TextField fx:id="lblcharger" disable="true" layoutX="16.0" layoutY="125.0" style="-fx-background-color: #F08080;" />
+      <CheckBox fx:id="chkmouse" layoutX="182.0" layoutY="36.0" mnemonicParsing="false" onAction="#chk1" text="Mouse @10 each" />
+      <CheckBox fx:id="chkusb" layoutX="184.0" layoutY="80.0" mnemonicParsing="false" onAction="#chk2" text="USB @20 each" />
+      <CheckBox fx:id="chkcharger" layoutX="188.0" layoutY="129.0" mnemonicParsing="false" onAction="#chk3" text="Charger@15 each" />
+      <TextField fx:id="lbldiscount" layoutX="113.0" layoutY="174.0" style="-fx-background-color: #F08080;" />
+      <Label layoutX="24.0" layoutY="178.0" text="DISCOUNT" />
+      <Button fx:id="btnadd" layoutX="16.0" layoutY="219.0" mnemonicParsing="false" onAction="#mtotal" text="TOTAL" />
+      <Button fx:id="btnreset" layoutX="103.0" layoutY="219.0" mnemonicParsing="false" onAction="#mreset" text="RESET" />
+      <Button fx:id="btnexit" layoutX="188.0" layoutY="219.0" mnemonicParsing="false" onAction="#mexit" text="EXIT" />
+      <TextArea fx:id="txtresult" layoutX="12.0" layoutY="254.0" prefHeight="138.0" prefWidth="318.0" style="-fx-background-color: #FFF5EE;" />
+   </children>
+</AnchorPane>
